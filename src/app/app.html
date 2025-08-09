@@ -1,0 +1,81 @@
+<!--<section>-->
+<!--  <div [formGroup]="userForm">-->
+<!--    <div class="container">-->
+
+<!--      <div>-->
+<!--        <mat-form-field class="example-full-width">-->
+<!--          <mat-label>First Name</mat-label>-->
+<!--          <input type="text" matInput formControlName="firstName" placeholder="First Name">-->
+<!--          <mat-error appFieldError></mat-error>-->
+<!--        </mat-form-field>-->
+<!--      </div>-->
+
+<!--      <div>-->
+<!--        <mat-form-field class="example-full-width">-->
+<!--          <mat-label>Last Name</mat-label>-->
+<!--          <input type="text" matInput placeholder="Last Name" formControlName="lastName"/>-->
+<!--          <mat-error appFieldError></mat-error>-->
+<!--        </mat-form-field>-->
+<!--      </div>-->
+
+<!--      <div>-->
+<!--        <mat-form-field class="example-full-width">-->
+<!--          <mat-label>Age</mat-label>-->
+<!--          <input type="number" matInput placeholder="Age" formControlName="age"/>-->
+<!--          <mat-error appFieldError></mat-error>-->
+<!--        </mat-form-field>-->
+<!--      </div>-->
+
+<!--      @let products = products$.hasValue();-->
+
+<!--      @if(products) {-->
+<!--        <div>-->
+<!--          <mat-form-field>-->
+<!--            <mat-label>Products</mat-label>-->
+<!--            <mat-select formControlName="product" (selectionChange)="onProductSelection($any($event))">-->
+<!--              @for (product of products$.value(); track product) {-->
+<!--                <mat-option [value]="product.id">{{product.title}}</mat-option>-->
+<!--              }-->
+<!--            </mat-select>-->
+<!--          </mat-form-field>-->
+<!--        </div>-->
+<!--      }-->
+
+<!--      <div class="footer">-->
+<!--        <button matButton="filled" (click)="onSubmit()">Basic</button>-->
+<!--        <button matButton="outlined">Reset</button>-->
+<!--      </div>-->
+
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+<!--<div>-->
+<!--<div>-->
+<!--    <form [formGroup]="userForm">-->
+<!--      <div>-->
+<!--        <app-input [inputOptions]="textFieldOptions[0]" [control]="userForm.get('firstName')"/>-->
+<!--      </div>-->
+<!--      <div>-->
+<!--        <app-input [inputOptions]="textFieldOptions[1]" [control]="userForm.get('lastName')"/>-->
+<!--      </div>-->
+<!--      <div>-->
+<!--        <app-input [inputOptions]="textFieldOptions[2]" [control]="userForm.get('age')"/>-->
+<!--      </div>-->
+
+<!--      <div>-->
+<!--        <button (click)="onSubmit()">Submit</button>-->
+<!--      </div>-->
+<!--    </form>-->
+<!--</div>-->
+<!--</div>-->
+
+
+  <div>
+    <app-header></app-header>
+  </div>
+
+
+
+
+

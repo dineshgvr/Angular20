@@ -1,0 +1,22 @@
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Number</mat-label>
+    <input type="text"
+           placeholder="Pick one"
+           aria-label="Number"
+           matInput
+           name="searchAutoComplete"
+           [ngModel]="autoCompleteSignal()"
+           (ngModelChange)="onChangeEvent($event)"
+           [matAutocomplete]="auto">
+    <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+
+      @for (option of  autoCompleteSignal$.value(); track option) {
+        <mat-option [value]="option.id">{{option.name}}</mat-option>
+      }
+    </mat-autocomplete>
+  </mat-form-field>
+</form>
+
+
+{{ autoCompleteSignal$.value()}}

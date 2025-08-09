@@ -1,0 +1,15 @@
+1. Defferable view
+2. Signals
+3. Control flow syntax
+4. @let variable using in template directly
+5. function based routing redirects
+6. computed signals
+7. linked signals
+8. enable zoneless change detection
+9. input signals
+10. model signals
+11. Reactive form control state change events
+12. resource api
+13. rxSource api
+14. httpResource api
+

@@ -1,0 +1,14 @@
+<div>
+  <mat-form-field class="example-full-width">
+    <mat-label>{{inputOptions.label}}</mat-label>
+    <input
+           [type]="inputOptions.control"
+           [name]="inputOptions.label"
+           [id]="inputOptions.name"
+           matInput
+           [placeholder]="inputOptions.placeholder"
+           [formControl]="control"
+           [required]="inputOptions.required"/>
+    <mat-error appFieldError></mat-error>
+  </mat-form-field>
+</div>
